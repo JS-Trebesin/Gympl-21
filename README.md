@@ -1,2 +1,3 @@
-# Gympl-21
-hic sunt dracones
+# 3G
+
+## Materiály k Javascriptu naleznete v místní Wiki
