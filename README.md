@@ -1,3 +1,3 @@
 # 3G 23/24
 
-## Ve složce [materiály](./materiály/) naleznete materiály k probírané látce
+## Ve složce [materiály](/materiály/) naleznete materiály k probírané látce
