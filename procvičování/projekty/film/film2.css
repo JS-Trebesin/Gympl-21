@@ -1,0 +1,36 @@
+.obrazek {
+    height: 200px;
+    width: auto;
+    border: 5px solid rgb(36, 79, 160);
+    border-radius: 5%;
+}
+
+.nadpisy {
+    color:rgb(36, 79, 160);
+}
+
+.tlacitka {
+    background-color:rgb(36, 79, 160);
+    color: white;
+    border-color: rgb(36, 79, 160);
+}
+
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+label {
+    font-family:sans-serif;
+    color: #333;
+    font-size: 0.8rem;
+}
+
+#komentVklad {
+    height: 150px;
+    width: 300px;
+}
+
+.hodnoceni input {
+    accent-color: rgb(36, 79, 160);
+}

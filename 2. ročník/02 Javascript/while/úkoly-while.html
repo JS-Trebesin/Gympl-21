@@ -1,0 +1,46 @@
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Procvičení while</title>
+    </head>
+
+    <body>
+        <script>
+            // Úkol 1 - vypiš všechna sudá čísla od 0 do 20
+
+            let i = 0
+
+            while (i < 21) {
+                console.log(i)
+                i = i + 2
+            }
+
+            // Úkol 2 - vypiš čísla od 15 do 20 a jejich součet
+
+            let k = 15
+            let soucet = 0
+
+            while (k < 21) {
+                console.log(k)
+                soucet = soucet + k
+                k++
+            }
+
+            console.log(soucet)
+
+            // Úkol 3 - vypisuj náhodná čísla od 0 do 10, dokud nepadne číslo 5
+
+            let j = 0
+
+            while (j !== 5) {
+                j = Math.floor(Math.random() * 11)
+                console.log(j)
+            }
+
+            // Úkol 4 - FizzBuzz - pokud je číslo dělitelné 3 napiš Fizz, pokud je
+            // dělitelné 5 napiš Buzz, pokud je dělitelné 3 i 5 napiš FizzBuzz
+        </script>
+    </body>
+</html>

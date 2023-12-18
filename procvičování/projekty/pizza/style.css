@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@100;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("pizza-background.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 8%;
+    top: 2%;
+}
+
+.nav {
+    font-size: 1.1em;
+    text-align: center;
+    width: 60vw;
+    position: absolute;
+    left: 16%;   
+    top: 2%; 
+}
+
+.nav li {
+    display: inline-block;  
+    padding: 0 5%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.main-header {
+    font-size: 7em;
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 8%;
+    bottom: 32%;
+    text-shadow: 0 0 10px black;
+}
+
+.subheading {
+    color: white;
+    position: absolute;
+    bottom: 17%;
+    left: 8%;
+    
+}
+
+.subheading a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    margin-right: 10px;
+
+
+}
+
+section {
+    margin: 10vh 25vw;
+}
+
+section p {
+    text-align: justify;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+}

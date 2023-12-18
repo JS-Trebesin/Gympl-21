@@ -1,0 +1,33 @@
+.cont {
+    background-color: black;
+    width: 100px;
+    height: 312px;
+    padding: 10px 10px;
+    
+}
+
+.red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+
+.orange {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 4 auto;
+}
+
+
+.green {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 4 auto;
+}
