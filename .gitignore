@@ -1,5 +1,7 @@
-testy/
-projekty/
-pisemky/
-hodiny_old/
-procvičování_old/
+*
+
+!2. ročník/*
+!3. ročník/*
+!procvičování/*
+!README.md
+!.gitignore
