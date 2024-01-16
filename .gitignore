@@ -1,16 +1,8 @@
-procvičování_old
-projekty
-pisemky
-testy
-hodiny_old
+*
 
-
-#*
-
-#!.gitignore
-#!2. ročník/**
-#!3. ročník/**
-#!3. ročník/**
-#!3. ročník/01 CSS/gradient/*
-#!procvičování/**
-#!README.md
+!/*
+!.gitignore
+!2. ročník/**
+!3. ročník/**
+!procvičování/**
+!README.md
