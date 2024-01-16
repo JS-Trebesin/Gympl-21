@@ -1,41 +1,40 @@
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: #181818;
-        }
-
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .circle {
-            width: 50px;
-            aspect-ratio: 1/1;
-            border: 5px solid #333;
-            border-top: 5px solid white;
-            border-radius: 50%;
-            animation: loading 1s linear forwards infinite;
-        }
-
-        @keyframes loading {
-            100% {
-                rotate: 360deg;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #181818;
             }
-        }
-    </style>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="circle">
 
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .circle {
+                width: 50px;
+                aspect-ratio: 1/1;
+                border: 5px solid #333;
+                /* nastaví světlejší horní část okraje */
+                border-top: 5px solid white;
+                border-radius: 50%;
+                animation: loading 1s linear forwards infinite;
+            }
+
+            @keyframes loading {
+                100% {
+                    rotate: 360deg;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="circle"></div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
