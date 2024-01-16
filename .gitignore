@@ -1,7 +1,8 @@
 *
 
-!2. ročník/*
-!3. ročník/*
-!procvičování/*
-!README.md
 !.gitignore
+!2. ročník/**
+!3. ročník/**
+!procvičování/**
+!README.md
+
