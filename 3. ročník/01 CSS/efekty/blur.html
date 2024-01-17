@@ -1,85 +1,85 @@
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: #181818;
-        }
-
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            /* Mezera mezi prvky flexu */
-            gap: 150px;
-        }
-
-
-
-        .nadpis {
-            color: #EEE;
-            font-family: monospace;
-            text-align: end;
-        }
-
-        .nadpis::after {
-            content: "";
-            width: 50px;
-            aspect-ratio: 1/1;
-            background-color: aqua;
-            position: absolute;
-            left: 50%;
-            translate: -50% 0;
-            z-index: -1;
-            filter: blur(25px);
-            animation: text-breath 7s linear infinite alternate;
-        }
-
-        @keyframes text-breath {
-            100% {
-                 filter: blur(100px);
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #181818;
             }
-        }
 
-
-        .card {
-            height: 300px;
-            width: 200px;
-            background-color: #181818;
-            border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px 40px;
-            color: #EEE;
-            /* výška mezi řádky */
-            line-height: 1.3;
-            box-sizing: border-box;
-            /* x, y, rozmazání, barva */
-            box-shadow: 0 0 100px aqua;
-            animation: breathing 1s linear infinite alternate;
-        }
-
-        @keyframes breathing {
-            100% {
-                box-shadow: 0 0 70px aqua;
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                min-height: 100vh;
+                /* Mezera mezi prvky flexu */
+                gap: 150px;
             }
-        }
 
+            .nadpis {
+                color: #eee;
+                font-family: monospace;
+                text-align: end;
+            }
 
-    </style>
-</head>
-<body>
-    <div class="wrapper">
-        <h1 class="nadpis">Nějaká náhodná věta, <br> s více slovy</h1>
-        <div class="card">
-            Další text, smutníme nad nedostatkem kreativity
+            .nadpis::after {
+                content: "";
+                width: 50px;
+                aspect-ratio: 1/1;
+                background-color: aqua;
+                position: absolute;
+                left: 50%;
+                translate: -50% 0;
+                /* Posune prvek na ose Z, aneb dál od nás, za nadpis */
+                z-index: -1;
+                /* Rozmaže prvek */
+                filter: blur(25px);
+                animation: text-breath 7s linear infinite alternate;
+            }
+
+            @keyframes text-breath {
+                100% {
+                    filter: blur(100px);
+                }
+            }
+
+            .card {
+                height: 300px;
+                width: 200px;
+                background-color: #181818;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 40px 40px;
+                color: #eee;
+                /* výška mezi řádky */
+                line-height: 1.3;
+                box-sizing: border-box;
+                /* stín -> x, y, rozmazání, barva */
+                box-shadow: 0 0 100px aqua;
+                animation: breathing 1s linear infinite alternate;
+            }
+
+            @keyframes breathing {
+                100% {
+                    box-shadow: 0 0 70px aqua;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1 class="nadpis">
+                Nějaká náhodná věta, <br />
+                s více slovy
+            </h1>
+            <div class="card">
+                Další text, smutníme nad nedostatkem kreativity
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
