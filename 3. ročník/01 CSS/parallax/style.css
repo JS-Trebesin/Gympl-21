@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+}
+
+.parallax {
+    position: relative;
+    min-height: 100vh; 
+    z-index: -5;
+    overflow: hidden;
+}
+
+.parallax > img {
+    position: absolute;
+    width: 100%;
+    animation: slide-down linear;
+    animation-timeline: scroll(root);
+}
+
+
+.clouds_1 {
+    z-index: 2;
+    --slide-speed: 50;
+}
+
+.clouds_2 {
+    z-index: 5;
+    --slide-speed: 50;
+}
+
+.rocks {
+    z-index: 3;
+    --slide-speed: 30;
+}
+
+.ground {
+    z-index: 4;
+    --slide-speed: 1;
+}
+
+.sky {
+    z-index: 1;
+    --slide-speed: 1;
+
+}
+
+section p {
+    width: 75ch;
+    text-align: justify;
+    margin-inline: auto;
+}
+
+section {
+    padding-top: 250px;
+    z-index: 10;
+
+}
+
+@keyframes slide-down {
+    100% {
+        /* calc() kalkulačka var(--nazev-promenne) krát 30px */
+        translate: 0 calc(var(--slide-speed) * 30px);
+    }
+}
