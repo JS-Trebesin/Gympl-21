@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 * {
     margin: 0;
 }
@@ -12,6 +14,15 @@
 .parallax > img {
     position: absolute;
     width: 100%;
+}
+
+
+.clouds_1, .clouds_2  {
+    animation: slide-sideways linear;
+    animation-timeline: scroll(root);
+}
+
+.rocks, .ground, .sky, .heading {
     animation: slide-down linear;
     animation-timeline: scroll(root);
 }
@@ -19,12 +30,12 @@
 
 .clouds_1 {
     z-index: 2;
-    --slide-speed: 50;
+    --slide-speed: -10;
 }
 
 .clouds_2 {
     z-index: 5;
-    --slide-speed: 50;
+    --slide-speed: 10;
 }
 
 .rocks {
@@ -43,15 +54,34 @@
 
 }
 
+.heading {
+    z-index: 6;
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    font-size: 6rem;
+    --slide-speed: 32;
+    font-family: "Dancing Script";
+
+
+}
+
+
 section p {
     width: 75ch;
     text-align: justify;
     margin-inline: auto;
+    color: white;
+    font-family: "Dancing Script";
 }
 
 section {
     padding-top: 250px;
     z-index: 10;
+    background-image: linear-gradient(#064f7d, #0177b2, #9186a1);
 
 }
 
@@ -60,4 +90,22 @@ section {
         /* calc() kalkulačka var(--nazev-promenne) krát 30px */
         translate: 0 calc(var(--slide-speed) * 30px);
     }
+}
+
+@keyframes slide-sideways {
+    100% {
+        translate: calc(var(--slide-speed) * 100px) 0;
+    }
+}
+
+.firefly {
+    height: 15px;
+    aspect-ratio: 1/1;
+    z-index: 99;
+    position: absolute;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background-color: #fff3a1;
+    filter: blur(2px);
+    transition: 0.5s ease-out;
 }
