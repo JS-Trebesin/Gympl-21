@@ -345,6 +345,10 @@ section#kontakty {
     margin-bottom: 100px;
 }
 
+.ukaz {
+    display: flex;
+}
+
 
 @media (width < 640px) {
     .nadpisy {
@@ -381,12 +385,23 @@ section#kontakty {
         display: flex;
     }
 
+    nav {
+        position: relative;
+    }
+
     nav ul {
         flex-direction: column;
         gap: 0.3rem;
+        position: absolute;
+        translate: 30% 0;
+        right: 0;
+        bottom: -100%;
+        text-align: center;
+        display: none;
     }
 
     nav a {
         font-size: 1rem;
+        color: black;
     }
 }
