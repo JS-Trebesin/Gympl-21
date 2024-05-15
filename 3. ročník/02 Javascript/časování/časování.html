@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demi {
+            height: 300px;
+            display: none;
+        }
+
+        .reveal {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="demi.JPG" id="demi" class="demi" alt="">
+
+    <script>
+        let demi = document.querySelector(".demi")
+
+        // arrow function
+        // setTimeout( () => {
+        //     demi.classList.toggle("reveal")
+        // }, 2000 )
+
+        // setTimeout(function() {
+        //     demi.classList.toggle("reveal")
+        // }, 2000 )
+
+
+        // setTimeout(reveal, 2000)
+
+        // function reveal() {
+        //     demi.classList.toggle("reveal")
+        // }
+
+        setInterval(() => {
+            demi.classList.toggle("reveal")
+        }, 10000)
+
+    </script>
+</body>
+</html>
