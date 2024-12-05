@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .loading {
+            height: 50px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            border: 5px solid yellow;
+            border-top: 5px solid white;
+            animation: toceni 1s linear infinite;
+        }
+
+        @keyframes toceni {
+            100% {
+                rotate: 360deg
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading"></div>
+</body>
+</html>

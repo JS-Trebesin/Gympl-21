@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .micek {
+            position: absolute;
+            height: 100px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: red;
+            animation: skakani 1s infinite alternate ease-in;
+        }
+
+        @keyframes skakani {
+            100% {
+                translate: 0 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+    </div>
+
+    <button id="tlacitko">Budiž míček</button>
+
+
+    <script>
+        let tlacitko = document.querySelector("#tlacitko")
+        let wrapper = document.querySelector(".wrapper")
+
+        tlacitko.addEventListener("click", function () {
+            // Vytvořím div a přidám mu classu, která z něj udělá míček
+            let micek = document.createElement("div")
+            micek.classList.add("micek")
+
+            // vygeneruji náhodné číslo od 0 do 100 a přidám ho jako left: do CSS
+            let nahodneCislo = Math.floor(Math.random() * 1000)
+            micek.style.left = `${nahodneCislo}px`
+
+            // vygeneruji náhodný hex, přidám mu # a přiřadím jej jako background-color do CSS
+            let nahodnaBarva = Math.floor(Math.random()*16777215).toString(16);
+            micek.style.backgroundColor = "#" + nahodnaBarva
+
+            // míček přidám do wrapperu
+            wrapper.append(micek)
+        })
+    </script>
+</body>
+</html>
